@@ -1,19 +1,18 @@
 version: "3"
 services:
   angular:
-    build:
-      context: ./angular
-      dockerfile: Dockerfile
-    container_name: product-manager-app
+    images: charleneangular-angular:latest
     ports:
       - "4200:4200"
     volumes:
       - ./angular:/app
     stdin_open: true
     tty: true
+    depends_on: 
+    - backend
 
   json-server:
-    image: clue/json-server
+    build: ./api
     container_name: fake-api
     volumes:
       - ./api:/data

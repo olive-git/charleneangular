@@ -8,7 +8,7 @@ RUN npm install -g @angular/cli
 WORKDIR /app
 
 # Copier package.json + package-lock.json pour installer les deps
-# COPY package*.json ./
+COPY package*.json ./
 
 RUN npm install
 
