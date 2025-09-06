@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}

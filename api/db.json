@@ -1,6 +1,14 @@
 {
-  "posts": [
-    { "id": 1, "title": "Hello" },
-    { "id": 2, "title": "World" }
+  "products": [
+    { "id": 1, "name": "Laptop", "price": 1200, "description": "High-performance laptop for professionals" },
+    { "id": 2, "name": "Smartphone", "price": 800, "description": "Flagship phone with excellent camera and battery life" },
+    { "id": 3, "name": "Headphones", "price": 150, "description": "Noise-cancelling wireless headphones" },
+    { "id": 4, "name": "Smartwatch", "price": 200, "description": "Waterproof smartwatch with fitness tracking" },
+    { "id": 5, "name": "Tablet", "price": 450, "description": "10-inch tablet with stylus support" },
+    { "id": 6, "name": "Gaming Console", "price": 500, "description": "Next-gen console with 4K support" },
+    { "id": 7, "name": "Bluetooth Speaker", "price": 90, "description": "Portable speaker with deep bass" },
+    { "id": 8, "name": "External Hard Drive", "price": 100, "description": "2TB USB 3.1 external hard drive" },
+    { "id": 9, "name": "Monitor", "price": 300, "description": "27-inch 144Hz gaming monitor" },
+    { "id": 10, "name": "Keyboard", "price": 70, "description": "Mechanical keyboard with RGB lighting" }
   ]
 }
