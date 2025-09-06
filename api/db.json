@@ -1,14 +1,82 @@
 {
   "products": [
-    { "id": 1, "name": "Laptop", "price": 1200, "description": "High-performance laptop for professionals" },
-    { "id": 2, "name": "Smartphone", "price": 800, "description": "Flagship phone with excellent camera and battery life" },
-    { "id": 3, "name": "Headphones", "price": 150, "description": "Noise-cancelling wireless headphones" },
-    { "id": 4, "name": "Smartwatch", "price": 200, "description": "Waterproof smartwatch with fitness tracking" },
-    { "id": 5, "name": "Tablet", "price": 450, "description": "10-inch tablet with stylus support" },
-    { "id": 6, "name": "Gaming Console", "price": 500, "description": "Next-gen console with 4K support" },
-    { "id": 7, "name": "Bluetooth Speaker", "price": 90, "description": "Portable speaker with deep bass" },
-    { "id": 8, "name": "External Hard Drive", "price": 100, "description": "2TB USB 3.1 external hard drive" },
-    { "id": 9, "name": "Monitor", "price": 300, "description": "27-inch 144Hz gaming monitor" },
-    { "id": 10, "name": "Keyboard", "price": 70, "description": "Mechanical keyboard with RGB lighting" }
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "description": "High-performance laptop for professionals"
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": 800,
+      "description": "Flagship phone with excellent camera and battery life"
+    },
+    {
+      "id": "3",
+      "name": "Headphones",
+      "price": 150,
+      "description": "Noise-cancelling wireless headphones"
+    },
+    {
+      "id": "4",
+      "name": "Smartwatch",
+      "price": 200,
+      "description": "Waterproof smartwatch with fitness tracking"
+    },
+    {
+      "id": "5",
+      "name": "Tablet",
+      "price": 450,
+      "description": "10-inch tablet with stylus support"
+    },
+    {
+      "id": "6",
+      "name": "Gaming Console",
+      "price": 500,
+      "description": "Next-gen console with 4K support"
+    },
+    {
+      "id": "7",
+      "name": "Bluetooth Speaker",
+      "price": 90,
+      "description": "Portable speaker with deep bass"
+    },
+    {
+      "id": "8",
+      "name": "External Hard Drive",
+      "price": 100,
+      "description": "2TB USB 3.1 external hard drive"
+    },
+    {
+      "id": "9",
+      "name": "Monitor",
+      "price": 300,
+      "description": "27-inch 144Hz gaming monitor"
+    },
+    {
+      "id": "10",
+      "name": "Keyboard",
+      "price": 70,
+      "description": "Mechanical keyboard with RGB lighting"
+    },
+    {
+      "id": "0677",
+      "name": "test",
+      "price": 1,
+      "description": ""
+    }
+  ],
+  "orders": [
+    { "id": 1, "productId": 1, "productName": "Laptop", "quantity": 1, "totalPrice": 1200, "orderDate": "2025-09-01T10:30:00Z", "customerName": "Alice Johnson" },
+    { "id": 2, "productId": 3, "productName": "Headphones", "quantity": 2, "totalPrice": 300, "orderDate": "2025-09-02T12:15:00Z", "customerName": "Bob Smith" },
+    { "id": 3, "productId": 5, "productName": "Tablet", "quantity": 1, "totalPrice": 450, "orderDate": "2025-09-02T14:45:00Z", "customerName": "Charlie Brown" },
+    { "id": 4, "productId": 2, "productName": "Smartphone", "quantity": 1, "totalPrice": 800, "orderDate": "2025-09-03T09:20:00Z", "customerName": "Diana Prince" },
+    { "id": 5, "productId": 7, "productName": "Bluetooth Speaker", "quantity": 3, "totalPrice": 270, "orderDate": "2025-09-03T16:10:00Z", "customerName": "Ethan Hunt" },
+    { "id": 6, "productId": 4, "productName": "Smartwatch", "quantity": 2, "totalPrice": 400, "orderDate": "2025-09-04T11:00:00Z", "customerName": "Fiona Gallagher" },
+    { "id": 7, "productId": 6, "productName": "Gaming Console", "quantity": 1, "totalPrice": 500, "orderDate": "2025-09-04T18:25:00Z", "customerName": "George Martin" },
+    { "id": 8, "productId": 8, "productName": "External Hard Drive", "quantity": 2, "totalPrice": 200, "orderDate": "2025-09-05T13:40:00Z", "customerName": "Hannah Lee" },
+    { "id": 9, "productId": 9, "productName": "Monitor", "quantity": 1, "totalPrice": 300, "orderDate": "2025-09-05T15:50:00Z", "customerName": "Ian Somerhalder" },
+    { "id": 10, "productId": 10, "productName": "Keyboard", "quantity": 2, "totalPrice": 140, "orderDate": "2025-09-06T10:05:00Z", "customerName": "Julia Roberts" }
   ]
 }

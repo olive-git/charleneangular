@@ -12,6 +12,7 @@ import { ProductService } from '../product-service';
 })
 export class ProductList implements OnInit {
   products: Product[] = [];
+  selectedProduct: Product | undefined = undefined;
 
   constructor(private productService: ProductService) {}
 
@@ -19,5 +20,13 @@ export class ProductList implements OnInit {
     this.productService.getProducts().subscribe(data => {
       this.products = data;
     });
+  }
+
+  showProductDetail(product: Product) {
+    this.selectedProduct = product;
+  }
+
+  hideProductDetail(){
+    this.selectedProduct = undefined;
   }
 }

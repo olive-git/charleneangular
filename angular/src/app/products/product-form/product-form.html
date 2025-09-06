@@ -1,47 +1,34 @@
-<nav class="bg-blue-300 p-7">
-  <ul class="flex justify-start gap-5 items-center">
-    <li class="hover:cursor-pointer">
-      <button class="py-2 px-3 text-10 text-white font-bold">
-        <a routerLink="/">MY APP</a>
-      </button>
-    </li>
-    <li class="hover:bg-blue-300 hover:cursor-pointer">
-      <button class=" py-2 px-3 text-white font-bold">
-        <a routerLink="/products">Products</a>
-      </button>
-    </li>
-    <li class="hover:bg-blue-300 hover:cursor-pointer">
-      <button class="py-2 px-3 text-white font-bold">
-        <a routerLink="/products">Products</a>
-      </button>
-    </li>
-    <li></li>
-  </ul>
-  
-</nav>
-<h2>Add Product</h2>
+<div class="flex flex-row justify-between my-4">
+<h2 class="text-5 font-bold">Add Product</h2>
+<button class="bg-blue-300 rounded rounded-4 py-2 px-3 text-white font-bold">
+    <a routerLink="/products">View Products</a>
+</button>
+</div>
 
-<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
-  <label>
-    Name:
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="border border-gray-200 shadow-sm rounded-sm py-4 px-3 w-100">
+    <div class="flex flex-col gap-5 p-3">
+  <label class="flex flex-col gap-1">
+    <p>Name<span class="text-red-500"> * </span>:</p>
     <input formControlName="name" class="border border-gray-200 shadow-sm rounded-sm p-1" />
   </label>
-  <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched">
+  <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="text-red-500">
     Name is required.
   </div>
 
-  <label>
-    Price:
+  <label class="flex flex-col gap-1">
+    <p>Price<span class="text-red-500"> * </span>:</p>
     <input type="number" formControlName="price" class="border border-gray-200 shadow-sm rounded-sm p-1" />
   </label>
-  <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">
+  <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="text-red-500">
     Price must be at least 1.
   </div>
 
-  <label>
-    Description:
+  <label class="flex flex-col gap-1">
+    <p>Description:</p>
     <textarea formControlName="description" class="border border-gray-200 shadow-sm rounded-sm p-1"></textarea>
   </label>
-
-  <button type="submit" [disabled]="productForm.invalid">Save</button>
+  </div>
+  <div class="w-full flex flex-row justify-center items-end">
+  <button class="bg-blue-300 rounded rounded-4 py-2 px-3 text-white font-bold hover:cursor-pointer" type="submit" [disabled]="productForm.invalid">Save</button>
+  </div>
 </form>
