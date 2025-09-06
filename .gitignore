@@ -1,9 +1,9 @@
 # Node modules (dans frontend et api)
-frontend/node_modules/
+angular/node_modules/
 api/node_modules/
 
 # Angular build output
-frontend/dist/
+angular/dist/
 
 # Logs
 *.log
