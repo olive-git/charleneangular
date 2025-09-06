@@ -1,19 +1,15 @@
-version: "3"
 services:
   angular:
-    images: charleneangular-angular:latest
+    image: charleneangular-angular:latest
     ports:
       - "4200:4200"
     volumes:
       - ./angular:/app
-    stdin_open: true
-    tty: true
-    depends_on: 
-    - backend
+      - /app/node_modules
+    command: ng serve --host 0.0.0.0 --port 4200 --poll 2000
 
   json-server:
-    build: ./api
-    container_name: fake-api
+    image: charleneangular-json-server
     volumes:
       - ./api:/data
     ports:
